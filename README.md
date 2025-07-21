@@ -11,11 +11,11 @@ This script uses FLASH with default parameters to merge paired-end illumina read
 ## Usage 
 
 ### Single sample
-`python merger.py [--sample-name SAMPLE_NAME] [--read1 READ1] [--read2 READ2] [--out-dir PATH_TO_OUTPUT_DIR]`
+`python atg_fastq_merger.py [--sample-name SAMPLE_NAME] [--read1 READ1] [--read2 READ2] [--out-dir PATH_TO_OUTPUT_DIR]`
 
 or
 
-`python merger.py [-n SAMPLE_NAME] [-r1 READ1] [-r2 READ2] [-o PATH_TO_OUTPUT_DIR]`
+`python atg_fastq_merger.py [-n SAMPLE_NAME] [-r1 READ1] [-r2 READ2] [-o PATH_TO_OUTPUT_DIR]`
     
 ### A list of samples:
 
@@ -27,11 +27,11 @@ Prepare a tab delimited `SAMPLES_TSV` file with the following headers `sample_na
 | mysample_2   | whatever2.R1.fastq.gz   | whatever2.R2.fastq.gz |
 
 
-`python merger.py [--samples-file PATH_TO_SAMPLES_TSV] [--out-dir PATH_TO_OUTPUT_DIR]`
+`python atg_fastq_merger.py [--samples-file PATH_TO_SAMPLES_TSV] [--out-dir PATH_TO_OUTPUT_DIR]`
 
 or
 
-`python merger.py [-f PATH_TO_SAMPLES_TSV] [-o PATH_TO_OUTPUT_DIR]`
+`python atg_fastq_merger.py [-f PATH_TO_SAMPLES_TSV] [-o PATH_TO_OUTPUT_DIR]`
 
     
 **Important Note**: `sample_name` must be alphanumeric (*i.e.*, avoid &, $, @, -, %, * and empty space in the file names).
